@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import Avatar from '@mui/material/Avatar';
+
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { authOperations } from 'redux/auth';
+import s from '../AppBar/AppBar.module.css';
 
 const theme = createTheme();
 
@@ -32,7 +33,7 @@ export default function SignUp() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" className={s.body}>
         <CssBaseline />
         <Box
           sx={{
@@ -42,7 +43,6 @@ export default function SignUp() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}></Avatar>
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
@@ -90,7 +90,7 @@ export default function SignUp() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 5, mb: 5 }}
             >
               Sign Up
             </Button>

@@ -18,7 +18,7 @@ const ContactList = () => {
     contacts.filter(({ name }) => name.toLowerCase().includes(normalizeFilter));
 
   return (
-    <ul className={s.contacts}>
+    <ol className={s.contacts}>
       {contacts &&
         filteredContacts.map(({ name, id, number }) => (
           <li key={id} className={s.contactsItem}>
@@ -29,7 +29,7 @@ const ContactList = () => {
             />
           </li>
         ))}
-    </ul>
+    </ol>
   );
 };
 

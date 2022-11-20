@@ -26,7 +26,16 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        fontSize: 18,
+        color: '#010101',
+      }}
+    >
       {isFetchingCurrentUser ? (
         <Skeleton
           animation={'wave'}

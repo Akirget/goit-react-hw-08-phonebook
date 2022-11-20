@@ -1,11 +1,12 @@
 .listItem {
   display: flex;
-  align-items: center;
-  font-size: 16px;
+  align-items: baseline;
+  font-size: 20px;
 }
 
 .name {
   margin-right: 5px;
+  font-size: 22px;
 }
 
 .number {
@@ -13,26 +14,21 @@
   font-style: italic;
 }
 
-.button {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #2ee59d;
-  border: none;
-  border-radius: 15px;
+.buttonEditor {
+  border: transparent;
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+  color: rgb(112, 112, 112);
+  background-color: #fff;
   cursor: pointer;
-  transition: all ease 250ms;
 }
-
-.button:hover,
+.buttonEditor:hover,
 .button:focus {
-  background-color: #17c580;
+  color: rgb(202, 202, 202);
+  background-color: rgb(41, 57, 71);
 }
 
-.button:active {
+.buttonEditor:active {
   transform: translateY(2px);
 }

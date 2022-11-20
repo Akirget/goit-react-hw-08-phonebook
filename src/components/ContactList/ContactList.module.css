@@ -1,7 +1,14 @@
 .contacts {
   padding-left: 40px;
+  color: white;
+  font-size: 20px;
 }
 
 .contactsItem:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.contactsItem {
+  color: white;
+  font-size: 20px;
 }

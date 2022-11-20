@@ -4,5 +4,15 @@
 }
 
 body {
-  background-color: brown;
+  background-color: #08014b;
+}
+h1,
+h2,
+p {
+  color: white;
+  text-align: center;
+}
+
+.body {
+  background-color: #08014b;
 }

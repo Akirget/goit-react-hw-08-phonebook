@@ -47,10 +47,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={s.form}>
+    <form className={s.form} onSubmit={handleSubmit}>
       <label>
         Name
         <input
+          className={s.inputName}
           type="text"
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -64,6 +65,7 @@ const ContactForm = () => {
       <label>
         Number
         <input
+          className={s.inputName}
           type="tel"
           name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -74,7 +76,7 @@ const ContactForm = () => {
         />
       </label>
 
-      <button type="submit" className={s.button}>
+      <button type="submit" className={s.buttonEditor}>
         Add contact
       </button>
     </form>

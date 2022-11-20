@@ -8,9 +8,10 @@
 
 .link:not(:last-child) {
   margin-right: 12px;
+  padding: 0px;
 }
 
 .activeLink {
-  composes: link;
-  color: blue;
+  color: #08007a;
+  padding: 10px;
 }
