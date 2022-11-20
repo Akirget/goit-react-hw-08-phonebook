@@ -26,6 +26,7 @@ label:last-child {
   height: 20px;
   border: 2px solid blue;
   border-radius: 50px;
+  outline: transparent;
 }
 
 .inputName:hover,
