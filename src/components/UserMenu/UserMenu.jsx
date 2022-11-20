@@ -1,6 +1,6 @@
-import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '@mui/material';
-import LogoutIcon from '@mui/icons-material/Logout';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { authSelectors, authOperations } from 'redux/auth';
 import s from './UserMenu.module.css';
 
@@ -12,13 +12,13 @@ export default function UserMenu() {
     <div className={s.container}>
       <p className={s.email}>{email}</p>
       <Button
+        className={s.buttonEditor}
         variant="contained"
         size="small"
-        startIcon={<LogoutIcon />}
         type="button"
         onClick={() => dispatch(authOperations.logOut())}
       >
-        Logout
+        Exit
       </Button>
     </div>
   );

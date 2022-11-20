@@ -7,3 +7,16 @@
   font-weight: 700;
   margin-right: 12px;
 }
+
+.buttonEditor {
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+  color: blue;
+  background-color: #fff;
+  cursor: pointer;
+}
+.buttonEditor:hover {
+  color: white;
+  background-color: blue;
+}

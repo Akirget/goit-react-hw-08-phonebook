@@ -2,16 +2,15 @@
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
-  color: #2a363b;
+  color: #000000;
   text-decoration: none;
-}
-
-.link:not(:last-child) {
-  margin-right: 12px;
-  padding: 0px;
+  font-size: 24px;
+  padding: 10px;
 }
 
 .activeLink {
-  color: #08007a;
+  color: blue;
   padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
 }

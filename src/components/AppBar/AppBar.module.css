@@ -3,16 +3,12 @@
   justify-content: flex-end;
 }
 
-body {
-  background-color: #08014b;
-}
 h1,
 h2,
-p {
-  color: white;
+p,
+span,
+li,
+ol {
+  color: blue;
   text-align: center;
-}
-
-.body {
-  background-color: #08014b;
 }
